@@ -8,9 +8,12 @@ import {
 import { I18nLocaleCode } from "@/i18n/i18n";
 import { LOCALE_KEY } from "@/lib/keys";
 import { LucideLanguages } from "lucide-react";
+import { FC } from "react";
 import { useTranslation } from "react-i18next";
 
-export const LanguageSelector = () => {
+export const LanguageSelector: FC<{ onOpenChange: () => void }> = ({
+	onOpenChange,
+}) => {
 	const { t, i18n } = useTranslation(["languageSelector"]);
 
 	const changeLanguage = (localeCode: I18nLocaleCode) => {
@@ -19,7 +22,7 @@ export const LanguageSelector = () => {
 	};
 
 	return (
-		<DropdownMenu>
+		<DropdownMenu onOpenChange={onOpenChange}>
 			<DropdownMenuTrigger asChild>
 				<Button variant="ghost" size="sm" className="w-9 px-0">
 					<LucideLanguages />
