@@ -15,14 +15,14 @@ export const fr: I18nLocale = {
 		chooseLanguage: "Choisir la langue",
 	},
 
+	siteHeader: {
+		typesafeTranslations: "Traductions typées",
+	},
+
 	themeSelector: {
 		chooseTheme: "Choisir le thème",
 		dark: "Foncé",
 		light: "Clair",
 		sameAsDevice: "Identique à l'appareil",
-	},
-
-	siteHeader: {
-		typesafeTranslations: "Traductions typées",
 	},
 } as const;

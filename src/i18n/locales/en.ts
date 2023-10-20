@@ -15,15 +15,15 @@ export const en = {
 		chooseLanguage: "Choose language",
 	},
 
+	siteHeader: {
+		typesafeTranslations: "Typesafe Translations",
+	},
+
 	themeSelector: {
 		chooseTheme: "Choose theme",
 		dark: "Dark",
 		light: "Light",
 		sameAsDevice: "Same as device",
-	},
-
-	siteHeader: {
-		typesafeTranslations: "Typesafe Translations",
 	},
 } as const;
 
